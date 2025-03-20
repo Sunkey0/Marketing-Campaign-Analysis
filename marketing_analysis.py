@@ -18,6 +18,14 @@ df_marketing['CTR (%)'] = (df_marketing['Clics'] / df_marketing['Impresiones']) 
 df_marketing['Tasa de Conversión (%)'] = (df_marketing['Conversiones'] / df_marketing['Clics']) * 100
 df_marketing['CPA ($)'] = df_marketing['Costo'] / df_marketing['Conversiones']
 
+# Datos de ejemplo para ventas
+datos_ventas = {
+    'Cliente': ['Cliente 1', 'Cliente 2', 'Cliente 3', 'Cliente 1', 'Cliente 2', 'Cliente 3'],
+    'Fecha': pd.to_datetime(['2023-01-01', '2023-01-02', '2023-01-03', '2023-02-01', '2023-02-02', '2023-02-03']),
+    'Monto': [100, 200, 150, 300, 250, 400]
+}
+df_ventas = pd.DataFrame(datos_ventas)
+
 # Configuración de Streamlit
 st.set_page_config(page_title="Análisis de Campañas de Marketing", layout="wide")
 st.title("Análisis de Campañas de Marketing")
