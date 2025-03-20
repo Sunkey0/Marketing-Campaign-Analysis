@@ -159,5 +159,5 @@ with tab2:
       0 & \text{en otro caso}
       \end{cases}
       \]
-    - **Interpretación:** Asigna todo el crédito al último canal antes de la conversión.
+    - **Interpretación:** Asigna todo el crédito al último canal antes de la conversiónn.
     """)
